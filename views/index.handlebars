@@ -40,11 +40,12 @@
 						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
 						<h4>{{title}}</h4>
 					</a>
-					{{#if viewAlt}}
-						<div class="likeCtr">Min! <button class="btn btn-default likeBtn">Like</button></div>
-					{{else}}
-						<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
-					{{/if}}
+					<div class="likeCtr">
+						{{#if viewAlt}}
+							Min!
+						{{/if}}
+						<button class="btn btn-default likeBtn">Like</button>
+					</div>
 					<div class="details"></div>
 				</div>
 			</div>
