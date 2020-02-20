@@ -9,7 +9,7 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
 
-  	<script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
 	<!-- Google Analytics -->
@@ -40,7 +40,11 @@
 						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
 						<h4>{{title}}</h4>
 					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
+					{{#if viewAlt}}
+						<div class="likeCtr">Min! <button class="btn btn-default likeBtn">Like</button></div>
+					{{else}}
+						<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
+					{{/if}}
 					<div class="details"></div>
 				</div>
 			</div>
